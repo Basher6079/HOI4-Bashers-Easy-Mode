@@ -1,0 +1,40 @@
+﻿l_english:
+
+### Categories ###
+
+cheat_build: "Building Up States"
+cheat_tech: "Boost Research"
+cheat_misc: "Extra Cheats"
+
+### Decisions ###
+
+cb_core: "Core All States"
+cb_populate: "Populate States"
+cb_infra: "Build Infrastructure"
+cb_civilian: "Build Civilian Factories"
+cb_military: "Build Military Factories"
+cb_dockyard: "Build Dockyard Factories"
+cb_airbase: "Build Airbases"
+cb_AA: "Build Anti-Air"
+cb_radar: "Build Radar Stations"
+
+ct_slot: "Research Slots"
+ct_rslot: "Remove Research Slot"
+ct_bt: "Add Breakthrough Points"
+ct_ahead: "Remove Ahead-of-Time Penalty"
+universal_cheat_bonus: "Ahead Booster"
+ct_tech: "Add XOR Tech"
+
+cm_ponypower: "Add 1M Ponypower"
+cm_xp: "Add Army/Navy/Air XP"
+cm_learning: "Level Up Generals"
+cm_ez: "Add EZ Booster (totally broken)"
+ez_booster: "EZ Booster"
+
+
+### Traits ###
+
+careful_general:0 "Careful Leader"
+careful_general_desc:0 "§LThis leader has proven to be careful.§!"
+genius_general:0 "Genius Leader"
+genius_general_desc:0 "§LThis leader has proven to be a genius.§!"

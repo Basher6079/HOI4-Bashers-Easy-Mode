@@ -1,0 +1,30 @@
+leader_traits = {
+	genius_general = {
+		type = all
+		trait_type = personality_trait
+		new_commander_weight = { factor = 0 }
+		
+		non_shared_modifier = {
+			experience_gain_factor = 10
+		}
+	}
+	careful_general = {
+		type = { land }
+		trait_type = personality_trait
+		new_commander_weight = { factor = 0 }
+		
+		modifier = {
+			wounded_chance_factor = -5
+			sickness_chance = -5
+		}
+	}
+	genius_op = {
+		type = operative
+		trait_type = personality_trait
+		new_commander_weight = { factor = 0 }
+		
+		non_shared_modifier = {
+			experience_gain_factor = 10
+		}
+	}
+}

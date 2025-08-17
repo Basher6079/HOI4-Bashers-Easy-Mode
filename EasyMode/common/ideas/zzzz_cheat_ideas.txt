@@ -1,0 +1,116 @@
+ideas = {
+	country = {
+		ez_booster = {
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 1
+				stability_weekly = 0.05
+				war_support_factor = 1
+				war_support_weekly = 0.05
+				political_power_gain = 5000
+				research_speed_factor = 10
+				monthly_population = 1
+				
+				consumer_goods_factor = -1
+				production_speed_buildings_factor = 10
+				global_building_slots_factor = 64
+				industrial_capacity_factory = 1
+				production_factory_max_efficiency_factor = 2
+				production_factory_efficiency_gain_factor = 0.5
+				industrial_capacity_dockyard = 5
+				production_lack_of_resource_penalty_factor = -2
+				local_resources_factor = 250
+				trade_opinion_factor = 25
+				faction_trade_opinion_factor = 25
+				min_export = -0.5
+				military_industrial_organization_funds_gain = 100
+				
+				agency_upgrade_time = -0.99
+				operative_slot = 6
+				new_operative_slot_bonus = 5
+				own_operative_detection_chance_factor = -5
+				enemy_operative_detection_chance_factor = 5
+				subversive_activites_upkeep = -0.8
+				foreign_subversive_activites = -0.8
+				intelligence_agency_defense = 25
+				own_operative_intel_extraction_rate = -0.99
+				enemy_operative_intel_extraction_rate = 0.5
+				enemy_operative_recruitment_chance = 2
+				intel_from_operatives_factor = 2
+				civilian_intel_factor = 1
+				army_intel_factor = 1
+				navy_intel_factor = 1
+				airforce_intel_factor = 1
+				crypto_strength = 10
+				decryption_power = 250
+				
+				compliance_gain = 2
+				
+				weekly_manpower = 2500
+				conscription = 0.25
+				non_core_manpower = 0.25
+				special_forces_cap = 5
+				special_forces_cap_flat = 1000
+				training_time_army_factor = -0.5
+				max_planning = 1
+				max_dig_in_factor = 0.5
+				dig_in_speed_factor = 1
+				naval_range = 1
+				air_weather_penalty = -1.0
+				air_night_penalty = -1.0
+				air_carrier_night_penalty_reduction_factor = 1.0
+				carrier_night_traffic = 1.0
+				air_range_factor = 10.0
+				air_ace_generation_chance_factor = 5.0
+				
+				max_command_power = 1000
+				command_power_gain = 500
+				army_leader_start_level = 7
+				army_leader_start_attack_level = 9
+				army_leader_start_defense_level = 9
+				army_leader_start_planning_level = 9
+				army_leader_start_logistics_level = 9
+				army_leader_cost_factor = -0.5
+				navy_leader_start_level = 7
+				navy_leader_start_attack_level = 9
+				navy_leader_start_defense_level = 9
+				navy_leader_start_maneuvering_level = 9
+				navy_leader_start_coordination_level = 9
+				navy_leader_cost_factor = -0.5
+				military_leader_cost_factor = -0.5
+				
+				experience_gain_army = 1
+				experience_gain_navy = 1
+				experience_gain_air = 1
+				air_mission_xp_gain_factor = 5
+				experience_gain_army_unit_factor = 1
+				experience_gain_navy_unit_factor = 1
+				land_doctrine_cost_factor = -0.5
+				naval_doctrine_cost_factor = -0.5
+				air_doctrine_cost_factor = -0.5
+				
+				max_fuel_factor = 5
+				fuel_gain_factor = 2
+				army_fuel_consumption_factor = -0.8
+				navy_fuel_consumption_factor = -0.8
+				air_fuel_consumption_factor = -0.8
+				supply_consumption_factor = -0.25
+				attrition = -0.25
+				supply_node_range = 2
+				no_supply_grace = 72
+				
+				peace_score_ratio_transferred_to_players = 0.25
+				sp_nuclear_bomb_speed_factor = 1
+				sp_thermo_nuclear_bomb_speed_factor = 1
+				special_project_speed_factor = 50
+				scientist_breakthrough_bonus_factor = 1
+				scientist_research_bonus_factor = 1
+				scientist_xp_gain_factor = 1
+				special_project_facility_supply_consumption_factor = -0.5
+			}
+		}
+	}
+}

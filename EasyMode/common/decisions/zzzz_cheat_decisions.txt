@@ -1,0 +1,906 @@
+cheat_build = {
+	cb_core = {
+		icon = GFX_decision_generic_industry
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					NOT = {is_core_of = ROOT}
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	cb_populate = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 4
+				add_manpower = 500000
+			}
+		}
+	}
+	cb_infra = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cb_civilian = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cb_military = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cb_dockyard = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cb_airbase = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cb_AA = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	cb_radar = {
+		icon = generic_construction
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_owned_state = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+cheat_tech = {
+	ct_slot = {
+		icon = generic_research
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			add_research_slot = 2
+		}
+	}
+	ct_rslot = {
+		icon = generic_research
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			add_research_slot = -1
+		}
+	}
+	ct_bt = {
+		icon = generic_research
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 100
+			}
+			add_breakthrough_points = {
+				specialization = specialization_naval
+				value = 100
+			}
+			add_breakthrough_points = {
+				specialization = specialization_air
+				value = 100
+			}
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 100
+			}
+			add_breakthrough_points = {
+				specialization = specialization_magical
+				value = 100
+			}
+		}
+	}
+	ct_ahead = {
+		icon = generic_research
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = universal_cheat_bonus
+				ahead_reduction = 100
+				uses = 1000
+				category = infantry_tech
+				category = infantry_weapons
+				category = special_forces_tech
+				category = cat_special_forces_generic
+				category = motorized_equipment
+				category = mio_cat_tech_all_motorized_mechanized
+				category = night_vision
+				category = support_tech
+				category = train_tech
+				category = mio_cat_all_artillery_equipment
+				category = armor
+				category = naval_equipment
+				category = air_equipment
+				category = jet_technology
+				category = electronics
+				category = nuclear
+				category = rocketry
+				category = industry
+				#category = land_doctrine
+				#category = naval_doctrine
+				#category = air_doctrine
+				#category = special_forces_doctrine
+				category = race_tech
+				category = magical_tech
+				category = missile
+				category = CAT_inf
+				category = CAT_special_forces
+				category = CAT_arty
+				category = CAT_artillery
+				category = CAT_aa
+				category = CAT_at
+				category = CAT_armor
+				category = CAT_naval_eqp
+				category = CAT_naval_misc
+				category = CAT_heli
+				category = CAT_air_eqp
+				category = CAT_missile
+				category = CAT_nuclear
+				category = CAT_space
+				category = CAT_computing_tech
+				category = CAT_internet_tech
+				category = CAT_industry
+				category = cat_fortification
+			}
+		}
+	}
+	ct_tech = {
+		icon = generic_civil_support
+
+		visible = {
+			is_ai = no
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_technology = {
+				flexible_line = 1
+				popup = no
+			}
+			set_technology = {
+				streamlined_line = 1
+				popup = no
+			}
+			
+			set_technology = {
+				concentrated_industry = 1
+				popup = no
+			}
+			set_technology = {
+				dispersed_industry = 1
+				popup = no
+			}
+			
+			set_technology = {
+				mobile_warfare = 1
+				popup = no
+			}
+			set_technology = {
+				armored_spearhead = 1
+				popup = no
+			}
+			set_technology = {
+				mobile_infantry = 1
+				popup = no
+			}
+			set_technology = {
+				firebrigades = 1
+				popup = no
+			}
+			set_technology = {
+				volkssturm = 1
+				popup = no
+			}
+			set_technology = {
+				superior_firepower = 1
+				popup = no
+			}
+			set_technology = {
+				intergrated_support = 1
+				popup = no
+			}
+			set_technology = {
+				dispersed_support = 1
+				popup = no
+			}
+			set_technology = {
+				concentrated_fire_plans = 1
+				popup = no
+			}
+			set_technology = {
+				centralized_fire_control = 1
+				popup = no
+			}
+			set_technology = {
+				trench_warfare = 1
+				popup = no
+			}
+			set_technology = {
+				grand_mechanized_offensive = 1
+				popup = no
+			}
+			set_technology = {
+				infantry_offensive = 1
+				popup = no
+			}
+			set_technology = {
+				mass_assault = 1
+				popup = no
+			}
+			set_technology = {
+				large_front_operations = 1
+				popup = no
+			}
+			set_technology = {
+				peoples_army = 1
+				popup = no
+			}
+			
+			set_technology = {
+				fleet_in_being = 1
+				popup = no
+			}
+			set_technology = {
+				trade_interdiction = 1
+				popup = no
+			}
+			set_technology = {
+				base_strike = 1
+				popup = no
+			}
+			set_technology = {
+				cv_core_role = 1
+				popup = no
+			}
+			set_technology = {
+				cv_support_role = 1
+				popup = no
+			}
+			
+			set_technology = {
+				air_superiority = 1
+				popup = no
+			}
+			set_technology = {
+				fighter_sweeps = 1
+				popup = no
+			}
+			set_technology = {
+				dogfighting_experience = 1
+				popup = no
+			}
+			set_technology = {
+				night_bombing = 1
+				popup = no
+			}
+			set_technology = {
+				day_bombing = 1
+				popup = no
+			}
+			set_technology = {
+				formation_flying = 1
+				popup = no
+			}
+			set_technology = {
+				force_rotation = 1
+				popup = no
+			}
+			set_technology = {
+				tactical_focus = 1
+				popup = no
+			}
+			set_technology = {
+				strategic_focus = 1
+				popup = no
+			}
+			set_technology = {
+				tactical_tac_primacy = 1
+				popup = no
+			}
+			set_technology = {
+				cas_primacy = 1
+				popup = no
+			}
+			set_technology = {
+				strategic_focus = 1
+				popup = no
+			}
+			set_technology = {
+				tactical_focus = 1
+				popup = no
+			}
+			set_technology = {
+				tactical_str_primacy = 1
+				popup = no
+			}
+			set_technology = {
+				str_primacy = 1
+				popup = no
+			}
+			set_technology = {
+				ground_directed = 1
+				popup = no
+			}
+			set_technology = {
+				onboard_guidance = 1
+				popup = no
+			}
+			set_technology = {
+				sam_integration = 1
+				popup = no
+			}
+			set_technology = {
+				intercept_patrols = 1
+				popup = no
+			}
+			
+			set_technology = {
+				special_forces_mountaineers = 1
+				popup = no
+			}
+			set_technology = {
+				ski_troops = 1
+				popup = no
+			}
+			set_technology = {
+				rangers = 1
+				popup = no
+			}
+			set_technology = {
+				mountaineers_combat_1 = 1
+				popup = no
+			}
+			set_technology = {
+				mountaineers_combat_2 = 1
+				popup = no
+			}
+			set_technology = {
+				mountaineers_keystone_1 = 1
+				popup = no
+			}
+			set_technology = {
+				mountaineers_keystone_2 = 1
+				popup = no
+			}
+			set_technology = {
+				special_forces_marines = 1
+				popup = no
+			}
+			set_technology = {
+				marines_jungle_troops = 1
+				popup = no
+			}
+			set_technology = {
+				marines_shore_parties = 1
+				popup = no
+			}
+			set_technology = {
+				marines_commandoes = 1
+				popup = no
+			}
+			set_technology = {
+				marines_expeditionary = 1
+				popup = no
+			}
+			set_technology = {
+				special_forces_paratroopers = 1
+				popup = no
+			}
+			set_technology = {
+				paras_dispersed_drop = 1
+				popup = no
+			}
+			set_technology = {
+				paras_combat_drop = 1
+				popup = no
+			}
+			set_technology = {
+				paras_combat_1 = 1
+				popup = no
+			}
+			set_technology = {
+				paras_combat_2 = 1
+				popup = no
+			}
+			set_technology = {
+				racial_specforce_start = 1
+				popup = no
+			}
+			set_technology = {
+				berlin_path = 1
+				popup = no
+			}
+			set_technology = {
+				scenario_analysis = 1
+				popup = no
+			}
+			set_technology = {
+				absolute_motorization = 1
+				popup = no
+			}
+			set_technology = {
+				brussels_path = 1
+				popup = no
+			}
+			set_technology = {
+				war_game_sophistication = 1
+				popup = no
+			}
+			set_technology = {
+				advanced_artillery_techniques = 1
+				popup = no
+			}
+			set_technology = {
+				global_path = 1
+				popup = no
+			}
+			set_technology = {
+				military_schools = 1
+				popup = no
+			}
+			set_technology = {
+				mechanized_surge = 1
+				popup = no
+			}
+			set_technology = {
+				rapid_response = 1
+				popup = no
+			}
+			set_technology = {
+				assymetric_warfare = 1
+				popup = no
+			}
+			set_technology = {
+				warsaw_path = 1
+				popup = no
+			}
+			set_technology = {
+				armored_army = 1
+				popup = no
+			}
+			set_technology = {
+				modern_partisans = 1
+				popup = no
+			}
+			if = {
+				limit = { has_tech = deer_race }
+				
+				set_technology = {
+					tech_deer_army = 1
+					popup = no
+				}
+				set_technology = {
+					tech_deer_armyb = 1
+					popup = no
+				}
+				set_technology = {
+					tech_deer_army_def = 1
+					popup = no
+				}
+				set_technology = {
+					tech_deer_army_atk = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = diamond_dog_race }
+				
+				set_technology = {
+					tech_diamond_dog_army_def3 = 1
+					popup = no
+				}
+				set_technology = {
+					tech_diamond_dog_army_atk3 = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = griffon_race }
+				
+				set_technology = {
+					tech_knights_magical = 1
+					popup = no
+				}
+				set_technology = {
+					tech_knights_regular = 1
+					popup = no
+				}
+				set_technology = {
+					tech_griffon_army_def2 = 1
+					popup = no
+				}
+				set_technology = {
+					tech_griffon_army_atk2 = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = hippogriff_race }
+				
+				set_technology = {
+					tech_hippogriff_engineering5a = 1
+					popup = no
+				}
+				set_technology = {
+					tech_hippogriff_engineering5b = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = horse_race }
+				
+				set_technology = {
+					tech_horse_unicorn_th = 1
+					popup = no
+				}
+				set_technology = {
+					tech_horse_unicorn_ms = 1
+					popup = no
+				}
+				set_technology = {
+					tech_horse_magical_infantry = 1
+					popup = no
+				}
+				set_technology = {
+					tech_horse_unicorns = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = kirin_race }
+				
+				set_technology = {
+					tech_kirin_brave4a = 1
+					popup = no
+				}
+				set_technology = {
+					tech_kirin_brave4b = 1
+					popup = no
+				}
+				set_technology = {
+					tech_kirin_military2a = 1
+					popup = no
+				}
+				set_technology = {
+					tech_kirin_military2b = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = pony_race }
+				
+				set_technology = {
+					tech_unicorn_th = 1
+					popup = no
+				}
+				set_technology = {
+					tech_unicorn_ms = 1
+					popup = no
+				}
+				set_technology = {
+					tech_pony_magical_infantry = 1
+					popup = no
+				}
+				set_technology = {
+					tech_pony_unicorns = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = yak_race }
+				
+				set_technology = {
+					tech_yak_unconquerable = 1
+					popup = no
+				}
+				set_technology = {
+					tech_yak_invincible = 1
+					popup = no
+				}
+				set_technology = {
+					tech_yak_winter_logi_1a = 1
+					popup = no
+				}
+				set_technology = {
+					tech_yak_winter_logi_1b = 1
+					popup = no
+				}
+			}
+			if = {
+				limit = { has_tech = zebra_race }
+				
+				set_technology = {
+					tech_zebra_jungle = 1
+					popup = no
+				}
+				set_technology = {
+					tech_zebra_desert = 1
+					popup = no
+				}
+				set_technology = {
+					zebra_pragmatic_production = 1
+					popup = no
+				}
+				set_technology = {
+					zebra_ritual_crafting = 1
+					popup = no
+				}
+				set_technology = {
+					zebra_mass_steel_production = 1
+					popup = no
+				}
+				set_technology = {
+					zebra_steel_rituals = 1
+					popup = no
+				}
+			}
+		}
+	}
+}
+cheat_misc = {
+	cm_ponypower = {
+		icon = generic_civil_support
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			add_manpower = 1000000
+		}
+	}
+	cm_xp = {
+		icon = generic_civil_support
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			army_experience = 1000
+			navy_experience = 1000
+			air_experience = 1000
+		}
+	}
+	cm_learning = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			is_ai = no
+		}
+		
+		days_remove = 1
+		days_re_enable = 1
+		fire_only_once = no
+
+		complete_effect = {
+			every_army_leader = {
+				limit = {
+					NOT = { has_trait = genius_general }
+				}
+				add_skill_level = 10
+				add_attack = 10
+				add_defense = 10
+				add_planning = 10
+				add_logistics = 10
+				add_trait = { trait = inflexible_strategist }
+				add_trait = { trait = brilliant_strategist }
+				add_trait = { trait = careful_general }
+				add_trait = { trait = genius_general }
+			}
+			every_navy_leader = {
+				limit = {
+					NOT = { has_trait = genius_general }
+				}
+				add_skill_level = 10
+				add_attack = 10
+				add_defense = 10
+				add_coordination = 10
+				add_maneuver = 10
+				add_trait = { trait = chief_engineer }
+				add_trait = { trait = bold }
+				add_trait = { trait = naval_lineage }
+				add_trait = { trait = superior_tactician }
+				add_trait = { trait = genius_general }
+			}
+		}
+	}
+	cm_ez = {
+		icon = generic_civil_support
+
+		visible = {
+			is_ai = no
+			NOT = { has_idea = ez_booster }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_ideas = ez_booster
+			add_political_power = 5000
+		}
+	}
+}

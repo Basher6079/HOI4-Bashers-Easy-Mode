@@ -1,0 +1,24 @@
+cheat_build = {
+	icon = generic_civil_support
+	
+	visible = {
+		is_ai = no
+	}
+	visible_when_empty = yes
+}
+cheat_tech = {
+	icon = generic_research
+	
+	visible = {
+		is_ai = no
+	}
+	visible_when_empty = yes
+}
+cheat_misc = {
+	icon = generic_propaganda
+	
+	visible = {
+		is_ai = no
+	}
+	visible_when_empty = yes
+}
